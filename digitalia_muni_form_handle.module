@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for digitalia_muni_form_handle module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+function digitalia_muni_form_handle_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $form['field_handle']['#disabled']= TRUE;
+}
+
